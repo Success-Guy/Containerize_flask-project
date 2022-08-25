@@ -11,7 +11,7 @@ docker build -t flask .
 ## Note:
 
 --host=0.0.0.0 and --port=80 are included in the command inside **Dockerfile** because flask only make port 5000 available locally - inside the container.
-Thus, to access it on the host machine, **host** with internet ip wildcard (0.0.0.0) and port argument ust be supplied to override Flask default values. 
+Thus, to access it on the host machine, **host** with internet ip wildcard (0.0.0.0) and port argument must be supplied to override Flask default values of **localhost:5000**. 
 
 ## To build, run:
 ```
