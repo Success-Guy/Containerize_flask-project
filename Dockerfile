@@ -12,7 +12,8 @@ RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Expose port 80
-EXPOSE 5000
+EXPOSE 80
 
 # Run app.py at container launch
-CMD ["flask", "run" , "--host=0.0.0.0"]
+CMD ["flask", "run" , "--host=0.0.0.0", "--port=80"]
+# CMD ["python", "app.py"]
